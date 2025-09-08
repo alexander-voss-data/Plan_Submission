@@ -48,11 +48,6 @@ All tables exported as CSV files for data warehouse integration:
    - Contains: Only activated organizations with performance scores
 
 
-### Threshold Analysis
-The Week 2 threshold of 0.0 is **mathematically correct** because:
-- 75th percentile of converted organizations = 0 activities in week 2
-- Only 43/206 (21%) of converted organizations have >0 week 2 activities  
-- This means "any activity in week 2" is a reasonable activation criterion
 
 ##  Business Insights
 
@@ -96,6 +91,7 @@ The Week 2 threshold of 0.0 is **mathematically correct** because:
 - **Memory Usage:** In-memory SQLite processing
 - **Output Size:** ~172KB total across 4 CSV files
 - **Data Accuracy:** 100% consistency validation passed
+
 
 
 
