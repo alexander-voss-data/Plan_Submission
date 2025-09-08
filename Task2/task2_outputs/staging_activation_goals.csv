@@ -1,0 +1,4 @@
+goal_id,metric_name,threshold_value,description
+WEEK1_MIN_ACTIVITY,Week 1 Minimum Activities,30.0,Minimum activities required in first week (75th percentile of converted orgs: 30.0)
+MINIMAL_EVENTS_THRESHOLD,Minimal Events (Modeling Basis),3.0,Minimal total events required as basis for modeling (fixed threshold: 3)
+WEEK4_STEADINESS_RATIO,Week 4 Steadiness Ratio,0.8,Week 4 activities must be ≥80% of Week 1 activities (fixed business rule)

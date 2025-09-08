@@ -1,0 +1,101 @@
+2025-09-08 02:30:39,153 - INFO - Starting Trial Activation Analysis
+2025-09-08 02:30:39,157 - INFO - Creating utility functions
+2025-09-08 02:30:39,158 - INFO - Utility functions created successfully
+2025-09-08 02:30:39,161 - INFO - Directory created/verified: Task1\bivariate_analysis_plots
+2025-09-08 02:30:39,164 - INFO - Directory created/verified: Task1\improved_activity_plots
+2025-09-08 02:30:39,165 - INFO - Environment setup completed successfully
+2025-09-08 02:30:39,165 - INFO - Random state set to: 42
+2025-09-08 02:30:39,168 - INFO - Loading data from: data_clean.csv
+2025-09-08 02:30:39,307 - INFO - Data loaded successfully. Shape: (41596, 7)
+2025-09-08 02:30:39,308 - INFO - Columns: ['ORGANIZATION_ID', 'ACTIVITY_NAME', 'TIMESTAMP', 'CONVERTED', 'CONVERTED_AT', 'TRIAL_START', 'TRIAL_END']
+2025-09-08 02:30:39,309 - INFO - === DATA OVERVIEW ===
+2025-09-08 02:30:39,309 - INFO - Dataset shape: (41596, 7)
+2025-09-08 02:30:39,360 - INFO - Memory usage: 15.84 MB
+2025-09-08 02:30:39,372 - INFO - Null values per column:
+ORGANIZATION_ID        0
+ACTIVITY_NAME          0
+TIMESTAMP              0
+CONVERTED              0
+CONVERTED_AT       32236
+TRIAL_START            0
+TRIAL_END              0
+dtype: int64
+2025-09-08 02:30:39,374 - INFO - Data types:
+ORGANIZATION_ID    object
+ACTIVITY_NAME      object
+TIMESTAMP          object
+CONVERTED            bool
+CONVERTED_AT       object
+TRIAL_START        object
+TRIAL_END          object
+dtype: object
+2025-09-08 02:30:39,375 - INFO - === BASIC DATASET INFORMATION ===
+2025-09-08 02:30:39,375 - INFO - Dataset dimensions: 41,596 rows × 7 columns
+2025-09-08 02:30:39,430 - INFO - Memory usage: 15.84 MB
+2025-09-08 02:30:39,431 - INFO - 
+=== COLUMN INFORMATION ===
+2025-09-08 02:30:39,438 - INFO -  1. ORGANIZATION_ID                | object          | Null:      0 (  0.0%) | Unique:      664
+2025-09-08 02:30:39,446 - INFO -  2. ACTIVITY_NAME                  | object          | Null:      0 (  0.0%) | Unique:       27
+2025-09-08 02:30:39,458 - INFO -  3. TIMESTAMP                      | object          | Null:      0 (  0.0%) | Unique:   40,550
+2025-09-08 02:30:39,460 - INFO -  4. CONVERTED                      | bool            | Null:      0 (  0.0%) | Unique:        2
+2025-09-08 02:30:39,464 - INFO -  5. CONVERTED_AT                   | object          | Null: 32,236 ( 77.5%) | Unique:      140
+2025-09-08 02:30:39,469 - INFO -  6. TRIAL_START                    | object          | Null:      0 (  0.0%) | Unique:      664
+2025-09-08 02:30:39,475 - INFO -  7. TRIAL_END                      | object          | Null:      0 (  0.0%) | Unique:      664
+2025-09-08 02:30:39,476 - INFO - 
+=== SAMPLE DATA (First 5 rows) ===
+2025-09-08 02:30:39,480 - INFO - 
+                    ORGANIZATION_ID                       ACTIVITY_NAME            TIMESTAMP  CONVERTED CONVERTED_AT          TRIAL_START            TRIAL_END
+0  00456fd86311b6095ad05f7e31758f0d            Scheduling.Shift.Created  2024-01-11 13:49:19      False          NaN  2024-01-11 13:44:36  2024-02-10 13:44:36
+1  00456fd86311b6095ad05f7e31758f0d  Scheduling.Shift.AssignmentChanged  2024-01-11 13:49:29      False          NaN  2024-01-11 13:44:36  2024-02-10 13:44:36
+2  00456fd86311b6095ad05f7e31758f0d  Scheduling.Shift.AssignmentChanged  2024-01-11 13:49:30      False          NaN  2024-01-11 13:44:36  2024-02-10 13:44:36
+3  00456fd86311b6095ad05f7e31758f0d       Communication.Message.Created  2024-01-11 13:52:48      False          NaN  2024-01-11 13:44:36  2024-02-10 13:44:36
+4  00456fd86311b6095ad05f7e31758f0d              Mobile.Schedule.Loaded  2024-01-11 14:02:13      False          NaN  2024-01-11 13:44:36  2024-02-10 13:44:36
+2025-09-08 02:30:39,481 - INFO - 
+=== DATA TYPE SUMMARY ===
+2025-09-08 02:30:39,483 - INFO - object         :   6 columns
+2025-09-08 02:30:39,484 - INFO - bool           :   1 columns
+2025-09-08 02:30:39,488 - INFO - Phase 1 (Data Loading and Initial Setup) completed successfully
+2025-09-08 02:30:39,489 - INFO - Phase 1 metrics: {'Records loaded': 41596, 'Columns': 7, 'Organizations': 664}
+2025-09-08 02:30:39,491 - INFO - Starting duplicate identification and removal
+2025-09-08 02:30:39,530 - INFO - Duplicates removed: 0
+2025-09-08 02:30:39,531 - INFO - Original shape: (41596, 7)
+2025-09-08 02:30:39,532 - INFO - Final shape: (41596, 7)
+2025-09-08 02:30:39,533 - INFO - Starting data type conversion and validation
+2025-09-08 02:30:39,610 - INFO - All data type conversions completed successfully
+2025-09-08 02:30:39,611 - INFO - Starting missing value analysis
+2025-09-08 02:30:39,630 - INFO - Missing value analysis completed
+2025-09-08 02:30:39,640 - INFO - Starting data validation rules check
+2025-09-08 02:30:39,667 - INFO - Data validation completed. Results: {'timestamp_within_trial': True, 'converted_at_within_trial': False, 'trial_duration_valid': True}
+2025-09-08 02:30:39,669 - INFO - Applying statistical robustness filtering
+2025-09-08 02:30:40,033 - INFO - Cleaned data saved to: Task1\data_clean.csv
+2025-09-08 02:30:40,037 - INFO - Phase 2 (Data Cleaning and Quality Assessment) completed successfully
+2025-09-08 02:30:40,040 - INFO - Phase 2 metrics: {'Original records': 41596, 'Final records': 26643, 'Organizations': 630, 'Data reduction': '35.9%'}
+2025-09-08 02:30:40,043 - INFO - Creating row-level temporal features
+2025-09-08 02:30:40,061 - INFO - Row-level temporal features created successfully
+2025-09-08 02:30:40,062 - INFO - Creating activity categories
+2025-09-08 02:30:40,074 - INFO - Activity categories created successfully
+2025-09-08 02:30:40,076 - INFO - Creating organization-level aggregated features
+2025-09-08 02:30:41,835 - INFO - Organization-level features created successfully
+2025-09-08 02:30:41,836 - INFO - Created features for 630 organizations
+2025-09-08 02:30:41,837 - INFO - Phase 3 (Feature Engineering) completed successfully
+2025-09-08 02:30:41,837 - INFO - Phase 3 metrics: {'Temporal features': 'Created', 'Activity categories': 'Created', 'Organization features': 630}
+2025-09-08 02:30:41,839 - INFO - Creating dataset segments for analysis
+2025-09-08 02:30:41,857 - INFO - Dataset segmentation completed
+2025-09-08 02:30:41,858 - INFO - Starting univariate analysis
+2025-09-08 02:30:41,866 - INFO - Univariate analysis completed
+2025-09-08 02:30:41,867 - INFO - Starting bivariate analysis
+2025-09-08 02:30:41,872 - INFO - Bivariate analysis completed
+2025-09-08 02:30:41,873 - INFO - Starting advanced EDA
+2025-09-08 02:30:41,876 - INFO - Advanced EDA completed
+2025-09-08 02:30:41,877 - INFO - Creating visualization plots
+2025-09-08 02:30:42,827 - INFO - Plot saved: Task1\bivariate_analysis_plots\activity_distribution.png
+2025-09-08 02:30:43,290 - INFO - Plot saved: Task1\bivariate_analysis_plots\category_distribution.png
+2025-09-08 02:30:43,468 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-09-08 02:30:43,469 - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-09-08 02:30:44,533 - INFO - Plot saved: Task1\bivariate_analysis_plots\temporal_activity_analysis.png
+2025-09-08 02:30:45,989 - INFO - Plot saved: Task1\improved_activity_plots\conversion_comparison.png
+2025-09-08 02:30:46,729 - INFO - Plot saved: Task1\bivariate_analysis_plots\feature_correlation_analysis.png
+2025-09-08 02:30:46,757 - INFO - Phase 4 (Dataset Segmentation and Analysis) completed successfully
+2025-09-08 02:30:46,758 - INFO - Phase 4 metrics: {'Segments created': 3, 'Univariate analysis': 'Completed', 'Bivariate analysis': 'Completed', 'Advanced EDA': 'Completed', 'Visualizations': 5, 'Plots saved': 'Task1\\bivariate_analysis_plots, Task1\\improved_activity_plots'}
+2025-09-08 02:30:46,760 - INFO - Starting focused conversion hypothesis testing
+2025-09-08 02:30:46,765 - ERROR - Analysis failed: cannot reindex on an axis with duplicate labels
