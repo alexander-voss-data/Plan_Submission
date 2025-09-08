@@ -24,9 +24,9 @@ I tried to find patterns using advanced techniques like logistic regression,Rand
 ## Insights & Results Task 2
 
 Based on the insights from Task 1, I identified 3 main goals to track activation:
-  1: Minimum of 3 activities (because that was also the lower cut-off for the analysis)
-  2: First week with at least 27 activities (75 percentile of converted orgs)
-  3: Steady use throughout week 4 (altough sligthly lower: 80%)
+  - Minimum of 3 activities (because that was also the lower cut-off for the analysis)
+  -  First week with at least 27 activities (75 percentile of converted orgs)
+  -  Steady use throughout week 4 (altough sligthly lower: 80%)
 
 Therefore, I created a data model based on 4 tables/views:
   1: staging table: metrics per org
@@ -96,6 +96,7 @@ Final/
 │       └── mart_trial_activation.csv      # Mart: Activated trials
 
 ```
+
 
 
 
