@@ -6,13 +6,6 @@ b. Trial Activation: Tracks which organizations have fully completed all trial g
 
 # Task 2: SQL-Based Data Mart Implementation 
 
-##  Business Objectives
-
-Task 2 successfully implemented a SQL-based data mart layer for trial activation tracking with the following **3 key metrics**:
-
-1.  **Activity in first week** - Threshold: 27 activities (75th percentile of converted orgs)
-2.  **Activity in second week** - Threshold: 0 activities (any activity counts)  
-3.  **Steadiness of activities in week 4** - Must be ≥90% of week 2 activities (or week 1 as fallback)
 
 ##  Data Mart Results
 
@@ -21,12 +14,6 @@ Task 2 successfully implemented a SQL-based data mart layer for trial activation
 - **Fully Activated Organizations:** 70 
 - **Overall Activation Rate:** 7.2%
 - **Data Processing:** 170,526 raw records processed into organization-level metrics
-
-### Activation Funnel Analysis
-- **Week 1 Goal Achieved:** 248/966 organizations (25.7%)
-- **Week 2 Goal Achieved:** 966/966 organizations (100.0%) 
-- **Week 4 Goal Achieved:** 119/966 organizations (12.3%)
-- **All 3 Goals Achieved:** 70/966 organizations (7.2%)
 
 ##  Architecture Implementation
 
@@ -117,6 +104,7 @@ The Week 2 threshold of 0.0 is **mathematically correct** because:
 - **Memory Usage:** In-memory SQLite processing
 - **Output Size:** ~172KB total across 4 CSV files
 - **Data Accuracy:** 100% consistency validation passed
+
 
 
 
