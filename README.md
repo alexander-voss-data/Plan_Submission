@@ -84,6 +84,7 @@ Final/
 │   ├── viz_utils.py                # Visualization utilities
 │   ├── display_utils.py            # Output formatting utilities
 │   ├── statistical_utils.py       # Statistical testing and modeling
+│   ├── trial_activation_analysis_*.log  # Analysis execution logs
 │   ├── bivariate_analysis_plots/   # Bivariate analysis visualizations
 │   └── improved_activity_plots/    # Activity and category analysis plots
 ├── Task2/                           # SQL data mart implementation
@@ -93,9 +94,9 @@ Final/
 │       ├── staging_activation_goals.csv    # Staging: Activation thresholds
 │       ├── mart_trial_goals.csv           # Mart: Trial progress tracking
 │       └── mart_trial_activation.csv      # Mart: Activated trials
-├── bivariate_analysis_plots/        # Legacy analysis plots (moved to Task1/)
-└── trial_activation_analysis_*.log  # Analysis execution logs
+
 ```
+
 
 
 
