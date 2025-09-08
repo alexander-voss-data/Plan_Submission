@@ -24,15 +24,15 @@ I tried to find patterns using advanced techniques like logistic regression,Rand
 ## Insights & Results Task 2
 
 Based on the insights from Task 1, I identified 3 main goals to track activation:
-1: Minimum of 3 activities (because that was also the lower cut-off for the analysis)
-2: First week with at least 27 activities (75 percentile of converted orgs)
-3: Steady use throughout week 4 (altough sligthly lower: 80%)
+  1: Minimum of 3 activities (because that was also the lower cut-off for the analysis)
+  2: First week with at least 27 activities (75 percentile of converted orgs)
+  3: Steady use throughout week 4 (altough sligthly lower: 80%)
 
 Therefore, I created a data model based on 4 tables/views:
-1: staging table: metrics per org
-2: staging table: goals/thresholds
-3: *mart view: Trial Goals
-4: *mart view: Trial Activation
+  1: staging table: metrics per org
+  2: staging table: goals/thresholds
+  3: *mart view: Trial Goals
+  4: *mart view: Trial Activation
 (*usually I would prefer to materialize mart layer table, but due to the setup inside pyhton I decided to create views)
 
 The staging tables could be filled via different source systems. Metrics per org is derived from the analysis of task 1 while the goals are a direct result and could be maintained somewhere else or automatically calculated.
@@ -96,6 +96,7 @@ Final/
 │       └── mart_trial_activation.csv      # Mart: Activated trials
 
 ```
+
 
 
 
