@@ -1,0 +1,7 @@
+2025-09-08 03:02:49,657 - INFO - Starting Trial Activation Analysis
+2025-09-08 03:02:49,660 - INFO - Creating utility functions
+2025-09-08 03:02:49,661 - INFO - Utility functions created successfully
+2025-09-08 03:02:49,664 - INFO - Directory created/verified: Task1\bivariate_analysis_plots
+2025-09-08 03:02:49,666 - INFO - Directory created/verified: Task1\improved_activity_plots
+2025-09-08 03:02:49,666 - INFO - Environment setup completed successfully
+2025-09-08 03:02:49,667 - INFO - Random state set to: 42
